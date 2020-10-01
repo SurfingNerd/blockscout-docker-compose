@@ -1,0 +1,1 @@
+A config for running a local openethereum instance on linux.
