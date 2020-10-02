@@ -1,8 +1,8 @@
 A config for running a docker instance for a local openethereum instance on linux.
 
-`docker-compose up` : start's a new Blockscout instance. beware: might reuse an existing database.
-`docker-compose down` : delete's the database
-`docker-compose down && docker-compose up` : start Blockscout from a fresh Database.
+- `docker-compose up` : start's a new Blockscout instance. beware: might reuse an existing database.
+- `docker-compose down` : delete's the database
+- `docker-compose down && docker-compose up` : start Blockscout from a fresh Database.
 
 
 # Notes
