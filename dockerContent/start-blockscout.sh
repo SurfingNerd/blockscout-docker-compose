@@ -6,8 +6,8 @@ echo $(pwd)
 
 set -e
 
-echo "waiting 5 seconds for DB..."
-sleep 5
+echo "waiting 4 seconds for DB..."
+sleep 4
 
 # echo "verifying database availability..."
 
