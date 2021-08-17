@@ -1,13 +1,13 @@
 version: '3'
 services:
     db:
-        image: postgres:12.4
+        image: postgres:12.8
         environment:
             POSTGRES_PASSWORD: enviu_dev
             POSTGRES_USER: postgres
         network_mode: host
     blockscout:
-        image: surfingnerd/blockscout:v0.6
+        image: surfingnerd/blockscout:v0.8-372
         depends_on:
             - "db"
         ports:
@@ -15,9 +15,9 @@ services:
         tty: true
         network_mode: host
         environment:
-            ETHEREUM_JSONRPC_HTTP_URL: http://172.17.0.1:8545
-            ETHEREUM_JSONRPC_TRACE_URL: http://172.17.0.1:8545
-            ETHEREUM_JSONRPC_WS_URL: ws://172.17.0.1:9541
+            ETHEREUM_JSONRPC_HTTP_URL: http://172.17.0.1:8540
+            ETHEREUM_JSONRPC_TRACE_URL: http://172.17.0.1:8540
+            ETHEREUM_JSONRPC_WS_URL: ws://172.17.0.1:9540
             ETHEREUM_JSONRPC_VARIANT: parity
             HOST: 127.17.0.1
             DATABASE_URL: postgresql://postgres:@127.17.0.1:5432/explorer?ssl=false
