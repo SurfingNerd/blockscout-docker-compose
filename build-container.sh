@@ -1,4 +1,5 @@
 #!/bin/sh
 
 #sometimes --no-cache might help.
-docker build  -f Dockerfile . -t surfingnerd/blockscout:v0.8-372
+docker build --no-cache -f Dockerfile . -t surfingnerd/blockscout-dmd:v0.9-411
+

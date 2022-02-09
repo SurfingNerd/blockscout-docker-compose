@@ -1,4 +1,4 @@
-FROM bitwalker/alpine-elixir-phoenix:1.11.4
+FROM bitwalker/alpine-elixir-phoenix:1.12
 
 RUN apk --no-cache --update add alpine-sdk gmp-dev automake libtool inotify-tools autoconf python3 file
 
@@ -14,7 +14,7 @@ RUN \
       curl \
       inotify-tools \
       nodejs \
-      nodejs-npm && \
+      npm && \
     npm install npm -g --no-progress && \
     update-ca-certificates --fresh && \
     rm -rf /var/cache/apk/*
