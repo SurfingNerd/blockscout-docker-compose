@@ -21,3 +21,7 @@ docker exec -ti dockerdev_blockscout_1 /bin/bash
 
 `network_mode: host`: This allows docker to access ports from your localhost
 `172.17.0.1`: In the default configuration in docker networks, this represents localhost.
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
